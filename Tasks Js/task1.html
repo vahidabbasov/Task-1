@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var a = 5;
+var powerOfNum = 1;
+var number = 0;
+var powDiff = 0;
+var powCur = 0;
+while (powerOfNum < a)
+{
+    powDiff = powCur;
+    powerOfNum *= 2;
+    number++;
+    powCur = a - powerOfNum;
+}
+if (powCur < 0)
+{
+    powCur *= -1;
+}
+if (powDiff < powCur)
+{
+    number--;
+}
+console.log(number);
+    </script>
+</body>
+</html>
